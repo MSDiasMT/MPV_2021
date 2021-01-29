@@ -15,6 +15,7 @@ class StsRead extends StsConnection{
     function getResult() {
         return $this->Result;
     }
+    //Busca todos os itens da tabela
     public function exeRead($Table, $Terms = null, $ParseString = null)
     {
         if (!empty($ParseString)) {
@@ -24,6 +25,7 @@ class StsRead extends StsConnection{
         echo "{$this->Select}";
         $this->exeInstrucao();
     }
+    //Busca por atributos específicos
     public function fullRead($Query, $ParseString = null)
     {
         $this->Select = (string) $Query;
@@ -38,11 +40,11 @@ class StsRead extends StsConnection{
             $this -> getInstrucao();
             $this -> Query -> execute();
             $this -> Result = $this -> Query -> fetchAll();
-            var_dump($this -> Result);
+            //var_dump($this -> Result);
         } catch (Exception $ex) {
             $this->Resultado = null;
         }
-        }
+    }
     private function conexao(){
         $this -> Connection = parent::getConnection();
         $this -> Query = $this -> Connection -> prepare($this->Select);

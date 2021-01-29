@@ -5,11 +5,12 @@ namespace Sts\Controllers;
         exit();
     }
 class Home {
-     public function index(){
+    private $Dados;
+    public function index(){
         $Home = new \Sts\Models\StsHome();
-        $Home -> index();
+        $this->Dados = $Home -> index();
         
-        $carregarView = new \Core\ConfigView("sts/Views/home/home");
+        $carregarView = new \Core\ConfigView("sts/Views/home/home", $this->Dados);
         $carregarView -> renderizar();
     }
 }
