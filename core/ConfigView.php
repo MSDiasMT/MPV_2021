@@ -12,6 +12,7 @@ class ConfigView {
     public function renderizar(){
         if(file_exists('app/'.$this -> Nome.'.php')){
             include 'app/sts/Views/include/header.php';
+            include 'app/sts/Views/include/menu.php';
             include 'app/'.$this -> Nome.'.php';
             include 'app/sts/Views/include/footer.php';
         }else{

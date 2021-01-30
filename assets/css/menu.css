@@ -1,0 +1,12 @@
+.imgLogo{
+    height: 75px;
+}
+.fa-sitemap{
+    text-decoration: none !important;
+    color: #ccc;
+}
+@media (max-width:768px){
+    .fa-sitemap{
+        display: none !important;
+    }   
+}
