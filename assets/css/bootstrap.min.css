@@ -6467,11 +6467,11 @@ button.close {
 }
 
 .carousel-control-prev-icon {
-    background-image: url(../img/prev.svg)
+    background-image: url(../imagens/icone/prev.svg)
 }
 
 .carousel-control-next-icon {
-    background-image: url(../img/next.svg)
+    background-image: url(../imagens/icone/next.svg)
 }
 
 .carousel-indicators {

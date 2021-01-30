@@ -5,6 +5,9 @@
     text-decoration: none !important;
     color: #ccc;
 }
+body{
+    padding-top: 3rem; 
+}
 @media (max-width:768px){
     .fa-sitemap{
         display: none !important;
