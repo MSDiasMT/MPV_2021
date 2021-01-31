@@ -1,5 +1,5 @@
 body {
-  padding-top: 3rem;
+  padding-top: 4.5rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
@@ -10,6 +10,10 @@ body {
 .carousel-caption {
   z-index: 10;
 }
+.carousel-caption span{
+	
+	background:rgba(0,0,0,0.7);
+	}
 .carousel-item {
   height: 20rem;
   background-color: #777;
@@ -42,6 +46,9 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
+}
+.title{
+    background: #000;
 }
 
 /* RESPONSIVE CSS ---- */

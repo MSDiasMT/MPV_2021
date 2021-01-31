@@ -22,7 +22,7 @@ class StsRead extends StsConnection{
             parse_str($ParseString, $this->Values);
         }
         $this->Select = "SELECT * FROM {$Table} {$Terms}";
-        echo "{$this->Select}";
+        //echo "{$this->Select}";
         $this->exeInstrucao();
     }
     //Busca por atributos específicos
