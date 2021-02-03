@@ -13,6 +13,9 @@ class Home {
         $listar_serv = new \Sts\Models\StsServico();
         $this -> Dados['sts_servicos'] = $listar_serv -> listar();
         
+        $listar_art_home = new \Sts\Models\StsArtHome();
+        $this -> Dados['sts_artigos'] = $listar_art_home -> listarArtHome();
+        
         $carregarView = new \Core\ConfigView("sts/Views/home/home", $this -> Dados);
         $carregarView -> renderizar();
     }
