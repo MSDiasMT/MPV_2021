@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/menu.css">
         <link rel="stylesheet" href="assets/css/carousel.css">
+        <link rel="stylesheet" href="assets/css/ionicons.min.css">
         <link rel="stylesheet" href="assets/fonts/css/font-awesome.min.css">
     </head>
     <body>

@@ -7,10 +7,13 @@ namespace Sts\Controllers;
 class Home {
     private $Dados;
     public function index(){
-        $Home = new \Sts\Models\StsHome();
-        $this->Dados ['sts_carousels'] = $Home -> index();
+        $listar_car = new \Sts\Models\StsCarousel();
+        $this -> Dados ['sts_carousels'] = $listar_car -> listar();
         
-        $carregarView = new \Core\ConfigView("sts/Views/home/home", $this->Dados);
+        $listar_serv = new \Sts\Models\StsServico();
+        $this -> Dados['sts_servicos'] = $listar_serv -> listar();
+        
+        $carregarView = new \Core\ConfigView("sts/Views/home/home", $this -> Dados);
         $carregarView -> renderizar();
     }
 }
