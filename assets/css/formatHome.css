@@ -1,0 +1,10 @@
+.bn1 img{
+    width: 100% !important;
+}
+.registry{
+    padding: 20px 0;
+    background: #000000;
+}
+.developer{
+    font-style: italic;
+}
